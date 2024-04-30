@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const nums = [1, 2, 3, 4, 5]
+
+        const c = nums.map(item => item * 3).filter(item => item % 2 === 0)
+
+        console.log(c)
+
+        const arr = [1, 2, 3, 4, 5]
+
+        console.log(arr.reduce((acc, curr) => {
+            acc.push(acc + curr)
+            return acc
+        }, []))
+
+        console.log(arr.reduce((acc, cur) => {
+            acc.push(cur + cur);
+            return acc;
+        }, []))
+    </script>
+</body>
+
+</html>

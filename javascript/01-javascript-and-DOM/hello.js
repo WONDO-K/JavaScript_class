@@ -1,0 +1,1 @@
+console.log('친일파')

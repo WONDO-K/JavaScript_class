@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(new Promise(()=>{}))
+
+        const promiseObj = new Promise((resolve,recject) => {
+            recject('실패')
+        })
+
+        promiseObj.tehn((resul,error)=>{
+            console.log()
+        })
+        
+        // primise
+
+        // 1. pending(보류 상태 ) -> 성공/실패를 알지 못함
+
+        // 2. fulfilled(성공) => 성공
+
+        //3 . rejected(실패) -> 실패
+
+        
+    </script>
+</body>
+</html>

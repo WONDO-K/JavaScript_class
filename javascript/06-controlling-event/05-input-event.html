@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" id="text-input">
+  <p></p>
+
+  <script>
+    const inputTag = document.querySelector('#text-input')
+
+    // p요소 선택
+    const pTag = document.querySelector('p')
+
+    const inputHandelr = function(event){
+      // 사용자가 입력한  데이터가 어디에 있는지 찾기
+      // console.log(event)
+      //console.log(event.currentTarget.value)
+
+      // 사용자 입력 데이터를 p 태그의 컨텐츠로 저장
+      pTag.textContent = event.currentTarget.value
+    }
+    
+
+    inputTag.addEventListener('input',inputHandelr)
+  </script>
+</body>
+
+
+</html>
